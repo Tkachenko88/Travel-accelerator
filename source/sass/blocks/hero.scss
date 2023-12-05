@@ -1,0 +1,63 @@
+.hero{
+  background: url('/img/desktop/Hero.jpg') no-repeat ;
+  min-height: 800px;
+  background-size: cover;
+  padding: 200px 120px 80px;
+}
+
+// .hero img{
+//   object-fit: cover;
+// }
+
+.hero__wrapper h2{
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+  color: $color-default-white;
+  max-width: 780px;
+  margin: 0;
+  margin-top: 74px;
+  margin-bottom: 25px;
+}
+
+.hero__wrapper p{
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 35px;
+  color: $color-default-white;
+  max-width: 420px;
+}
+
+.hero__wrapper a{
+  padding: 20px;
+  background-color: $color-neon-blue;
+  font-weight: 500;
+  line-height: 16px;
+  color: $color-default-white;
+  display: block;
+  width: fit-content;
+}
+
+.hero__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__description{
+  margin-bottom: 134px;
+}
+
+.hero__content{
+  display: flex;
+  gap: 10px;
+}
+
+.hero__content span{
+  font-size: 12px;
+  color: $color-default-white;
+  padding: 14px 20px;
+  border: 1px solid var(--white-50, rgba(255, 255, 255, 0.50));
+  display: block;
+  width: fit-content;
+}
