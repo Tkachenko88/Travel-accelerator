@@ -1,11 +1,11 @@
-export const initTourSwiper = (isLoop) => {
-  const swiperWrapper = document.querySelector('[tour-swiper]');
-  const buttonPrev = document.querySelector('[tour-swiper-btn-prev]');
-  const buttonNext = document.querySelector('[tour-swiper-btn-next]');
+export const initInstructorSwiper = (isLoop) => {
+  const swiperWrapper = document.querySelector('[instructor-swiper]');
+  const buttonPrev = document.querySelector('[instructor-swiper-btn-prev]');
+  const buttonNext = document.querySelector('[instructor-swiper-btn-next]');
 
   return new window.Swiper(swiperWrapper, {
     loop: isLoop,
-    slidesPerView: 3,
+    slidesPerView: 4,
     breakpoints: {
       // when window width is >= 320px
       320: {
@@ -15,7 +15,7 @@ export const initTourSwiper = (isLoop) => {
       // when window width is >= 480px
       768: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
     },
     navigation: {

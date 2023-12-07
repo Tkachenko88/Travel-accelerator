@@ -1,0 +1,51 @@
+.learning{
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.learning h3{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.learning ul{
+  display: flex;
+  justify-content: left;
+
+  &::after{
+    content: "";
+    height: 1px;
+    width: calc(100% - 130px);
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+    background-color: $color-neon-blue;
+  }
+}
+
+.learning li{
+  display: flex;
+  justify-content: left;
+  padding: 8px 10px;
+  position: relative;
+
+  &::after{
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    background-color: $color-neon-blue;
+  }
+}
+
+.learning p{
+  margin: 0;
+  margin-left: 10px;
+  max-width: 198px;
+}

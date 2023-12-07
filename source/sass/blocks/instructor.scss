@@ -1,0 +1,31 @@
+.instructor ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.instructor li{
+  padding: 15px;
+  border: 1px solid var(--additional-20, rgba(2, 102, 193, 0.10));
+  max-width: 285px;
+}
+
+.instructor h4{
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.instructor p{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.instructor__swiper-nav{
+  display: flex;
+  position: absolute;
+  top: 175px;
+  right: 120px;
+  gap: 4px;
+  cursor: pointer;
+}

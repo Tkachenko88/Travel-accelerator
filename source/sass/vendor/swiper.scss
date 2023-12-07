@@ -246,9 +246,9 @@
 .swiper-rtl .swiper-button-prev:after {
   content: 'next';
 }
-// .swiper-button-lock {
-//   display: none;
-// }
+.swiper-button-lock {
+  display: none;
+}
 :root {
   /*
   --swiper-pagination-color: var(--swiper-theme-color);

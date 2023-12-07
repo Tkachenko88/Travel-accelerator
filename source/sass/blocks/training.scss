@@ -1,5 +1,13 @@
-.training{
+.training {
+ position: relative;
+}
 
+.training h3{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .training h2{
@@ -13,4 +21,5 @@
 .training p {
   margin: 0;
   max-width: 820px;
+  margin-bottom: 56px;
 }
