@@ -1,0 +1,38 @@
+.form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form h2{
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form p{
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.form__input{
+  padding: 20px 30px;
+  border-radius: 2px;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  margin-right: 30px;
+  width: 360px;
+}
+
+.form__btn{
+  padding: 20px;
+  background-color: $color-neon-blue;
+  width: 180px;
+  color: $color-default-white;
+  border: none;
+}

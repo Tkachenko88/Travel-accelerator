@@ -2,8 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTourSwiper} from './modules/tour-swiper';
-import { initInstructorSwiper } from './modules/instructor-swiper';
-import { initReviewSwiper } from './modules/review-swiper';
+import {initInstructorSwiper} from './modules/instructor-swiper';
+import {initReviewSwiper} from './modules/review-swiper';
+import {initAdvantagesSwiper} from './modules/advantages-swiper';
+import {initGallerySwiper} from './modules/gallery-swiper';
 
 
 // ---------------------------------
@@ -20,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initTourSwiper(true);
   initInstructorSwiper(true);
   initReviewSwiper(true);
+  initAdvantagesSwiper(true);
+  initGallerySwiper(true);
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

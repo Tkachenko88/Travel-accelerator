@@ -1,0 +1,42 @@
+.gallery{
+  position: relative;
+  padding: 0;
+}
+
+.gallery h2{
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0 120px 26px 120px;
+ }
+
+.gallery p{
+  max-width: 693px;
+  margin: 0 120px 26px 120px;
+}
+
+.gallery__wrapper{
+  display: flex;
+  height: 450px;
+  gap: 5px;
+}
+
+.gallery__card{
+  display: flex;
+  gap: 5px;
+}
+
+.gallery__card-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gallery__swiper-nav{
+  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 120px;
+  gap: 4px;
+  cursor: pointer;
+}

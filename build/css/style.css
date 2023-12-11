@@ -2456,6 +2456,7 @@ button,
   bottom: 0;
   left: 130px;
   background-color: #0266C1;
+  opacity: 0.2;
 }
 
 .learning li {
@@ -2527,6 +2528,8 @@ button,
 
 .review {
   position: relative;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .review h2 {
@@ -2586,6 +2589,234 @@ button,
   right: 120px;
   gap: 4px;
   cursor: pointer;
+}
+
+.advantages {
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 81px;
+}
+
+.advantages h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.advantages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.advantages li {
+  max-width: 380px;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid rgba(2, 100, 192, 0.102);
+}
+
+.advantages__wrapper {
+  border: 1px solid #0266C1;
+  padding: 16px;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+}
+
+.advantages h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.advantages__swiper-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery {
+  position: relative;
+  padding: 0;
+}
+
+.gallery h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0 120px 26px 120px;
+}
+
+.gallery p {
+  max-width: 693px;
+  margin: 0 120px 26px 120px;
+}
+
+.gallery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 450px;
+  gap: 5px;
+}
+
+.gallery__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.gallery__card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.gallery__swiper-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 120px;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.form h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form p {
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.form__input {
+  padding: 20px 30px;
+  border-radius: 2px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  margin-right: 30px;
+  width: 360px;
+}
+
+.form__btn {
+  padding: 20px;
+  background-color: #0266C1;
+  width: 180px;
+  color: #ffffff;
+  border: none;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 65px;
+  margin-bottom: 95px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contacts__wrapper {
+  margin-right: 115px;
+}
+
+.contacts__wrapper h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.contacts__wrapper p {
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.contacts__wrapper li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+.contacts__wrapper li:last-child {
+  margin: 0;
+}
+
+.contacts__content {
+  margin-left: 30px;
+}
+
+.contacts__content h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
 }
 
 /* @mixin hover-focus {
