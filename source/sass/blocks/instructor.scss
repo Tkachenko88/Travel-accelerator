@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 56px;
 }
 
 .instructor li{
@@ -19,6 +20,7 @@
 .instructor p{
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .instructor__swiper-nav{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -2155,8 +2156,6 @@ button,
 }
 
 .hero {
-  background: url("/img/desktop/Hero.jpg") no-repeat;
-  min-height: 800px;
   background-size: cover;
   padding: 200px 120px 80px;
 }
@@ -2231,11 +2230,21 @@ button,
 }
 
 .tour h2 {
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 800;
-  line-height: 55px;
+  line-height: 35px;
   margin: 0;
   margin-bottom: 53px;
+  position: relative;
+}
+.tour h2::after {
+  content: "Ближайшие туры";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 0;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .tour ul {
@@ -2378,6 +2387,16 @@ button,
   line-height: 100%;
   margin: 0;
   margin-bottom: 37px;
+  position: relative;
+}
+.training h2::after {
+  content: "Обучение";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 0;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .training p {
@@ -2397,6 +2416,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 56px;
 }
 
 .instructor li {
@@ -2414,6 +2434,7 @@ button,
 .instructor p {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .instructor__swiper-nav {
@@ -2510,6 +2531,16 @@ button,
   font-weight: 800;
   line-height: 35px;
   margin-bottom: 57px;
+  position: relative;
+}
+.about__wrapper h2::after {
+  content: "О нас";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 0;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .about__wrapper h3 {
@@ -2538,6 +2569,16 @@ button,
   font-weight: 800;
   line-height: 35px;
   margin-bottom: 30px;
+  position: relative;
+}
+.review h2::after {
+  content: "Отзывы";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 0;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .review ul {
@@ -2604,6 +2645,16 @@ button,
   margin: 0;
   text-align: center;
   margin-bottom: 50px;
+  position: relative;
+}
+.advantages h2::after {
+  content: "Преимущества";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 34%;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .advantages ul {
@@ -2672,6 +2723,16 @@ button,
   font-weight: 800;
   line-height: 35px;
   margin: 0 120px 26px 120px;
+  position: relative;
+}
+.gallery h2::after {
+  content: "Фотогалерея";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 0;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .gallery p {
@@ -2769,7 +2830,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 65px;
+  padding: 65px 120px 0 120px;
   margin-bottom: 95px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -2786,6 +2847,16 @@ button,
   line-height: 35px;
   margin: 0;
   margin-bottom: 25px;
+  position: relative;
+}
+.contacts__wrapper h2::after {
+  content: "Контакты";
+  position: absolute;
+  font-size: 55px;
+  line-height: 55px;
+  left: 0;
+  bottom: -3px;
+  opacity: 0.03;
 }
 
 .contacts__wrapper p {
@@ -2817,6 +2888,72 @@ button,
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+}
+
+.footer {
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+  padding: 32px 120px;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 22px;
+}
+
+.footer__contacts {
+  color: #2D383F;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.footer__social {
+  margin-bottom: 22px;
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.footer__link {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  color: #2D383F;
+  text-align: center;
+  display: block;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-nav__item {
+  line-height: 16px;
 }
 
 /* @mixin hover-focus {

@@ -16,6 +16,17 @@
   line-height: 100%;
   margin: 0;
   margin-bottom: 37px;
+  position: relative;
+
+  &::after{
+    content: "Обучение";
+    position: absolute;
+    font-size: 55px;
+    line-height: 55px;
+    left: 0;
+    bottom: -3px;
+    opacity: 0.03;
+  }
 }
 
 .training p {

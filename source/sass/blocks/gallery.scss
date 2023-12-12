@@ -8,6 +8,17 @@
   font-weight: 800;
   line-height: 35px;
   margin: 0 120px 26px 120px;
+  position: relative;
+
+  &::after{
+    content: "Фотогалерея";
+    position: absolute;
+    font-size: 55px;
+    line-height: 55px;
+    left: 0;
+    bottom: -3px;
+    opacity: 0.03;
+  }
  }
 
 .gallery p{

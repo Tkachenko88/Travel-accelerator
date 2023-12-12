@@ -22,6 +22,17 @@
   font-weight: 800;
   line-height: 35px;
   margin-bottom: 57px;
+  position: relative;
+
+  &::after{
+    content: "О нас";
+    position: absolute;
+    font-size: 55px;
+    line-height: 55px;
+    left: 0;
+    bottom: -3px;
+    opacity: 0.03;
+  }
 }
 
 .about__wrapper h3{

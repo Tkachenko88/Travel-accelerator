@@ -1,7 +1,7 @@
 .contacts{
   display: flex;
   justify-content: space-between;
-  padding-top: 65px;
+  padding: 65px 120px 0 120px;
   margin-bottom: 95px;
   align-items: flex-end;
 }
@@ -16,6 +16,17 @@
   line-height: 35px;
   margin: 0;
   margin-bottom: 25px;
+  position: relative;
+
+  &::after{
+    content: "Контакты";
+    position: absolute;
+    font-size: 55px;
+    line-height: 55px;
+    left: 0;
+    bottom: -3px;
+    opacity: 0.03;
+  }
 }
 
 .contacts__wrapper p{

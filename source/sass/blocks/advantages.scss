@@ -11,6 +11,17 @@
   margin: 0;
   text-align: center;
   margin-bottom: 50px;
+  position: relative;
+
+  &::after{
+    content: "Преимущества";
+    position: absolute;
+    font-size: 55px;
+    line-height: 55px;
+    left: 34%;
+    bottom: -3px;
+    opacity: 0.03;
+  }
 }
 
 .advantages ul{

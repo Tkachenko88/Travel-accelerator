@@ -4,11 +4,22 @@
 }
 
 .tour h2{
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 800;
-  line-height: 55px;
+  line-height: 35px;
   margin: 0;
   margin-bottom: 53px;
+  position: relative;
+
+  &::after{
+    content: "Ближайшие туры";
+    position: absolute;
+    font-size: 55px;
+    line-height: 55px;
+    left: 0;
+    bottom: -3px;
+    opacity: 0.03;
+  }
 }
 
 .tour ul{
@@ -29,7 +40,6 @@
   margin-top: 53px;
   gap: 12px;
 }
-
 
 .tour__link a{
   font-size: 16px;
