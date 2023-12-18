@@ -1,8 +1,9 @@
 .hero{
-  background-size: cover;
-  padding: 200px 120px 80px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  max-width: 1920px;
 }
-
 
 .hero__wrapper h2{
   font-size: 77px;
@@ -11,8 +12,8 @@
   color: $color-default-white;
   max-width: 780px;
   margin: 0;
-  margin-top: 74px;
   margin-bottom: 25px;
+  min-width: 906px;
 }
 
 .hero__wrapper p{
@@ -37,15 +38,19 @@
 .hero__wrapper{
   display: flex;
   flex-direction: column;
-}
-
-.hero__description{
-  margin-bottom: 134px;
+  background-size: cover;
+  padding: 200px 120px 80px;
+  flex-direction: row;
 }
 
 .hero__content{
   display: flex;
   gap: 10px;
+  margin-top: 134px;
+}
+
+.hero__content svg{
+  margin-right: 8px;
 }
 
 .hero__content span{
@@ -55,4 +60,53 @@
   border: 1px solid var(--white-50, rgba(255, 255, 255, 0.50));
   display: block;
   width: fit-content;
+}
+
+.hero__photo{
+  position: relative;
+  width: 407px;
+}
+
+.hero__photo img{
+  position: absolute;
+
+  &:last-child{
+    top: 80px;
+    right: -10px;
+  }
+}
+
+.hero__container{
+  position: absolute;
+  top: 335px;
+  right: 120px;
+}
+
+.hero__video {
+  position: relative;
+}
+
+.hero__video-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid $color-default-white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+
+  // ::before{
+  //   content: "";
+  //   width: 56px;
+  //   height: 56px;
+  //   border-radius: 50%;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  // }
 }

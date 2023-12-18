@@ -15,7 +15,7 @@ export const initReviewSwiper = (isLoop) => {
       // when window width is >= 480px
       768: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 120,
       },
     },
     navigation: {

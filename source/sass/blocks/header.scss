@@ -1,11 +1,16 @@
 .header{
-  display: flex;
-  justify-content: space-between;
+  z-index: 3;
   padding: 32px 20px;
   background-color: $color-neon-blue;
   position: absolute;
   left: 120px;
-  width: 1200px;
+  top: 0;
+  width: calc(100% - 240px);
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__contacts{

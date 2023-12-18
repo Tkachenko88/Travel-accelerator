@@ -56,3 +56,13 @@
   font-weight: 600;
   line-height: 18px;
 }
+
+.contacts__map{
+  position: relative;
+}
+
+.contacts__map svg{
+  position: absolute;
+  bottom: 120px ;
+  right: 32%;
+}
