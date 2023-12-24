@@ -1,18 +1,13 @@
-// .instructor ul{
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   margin-bottom: 56px;
-// }
-
 .instructor li{
   padding: 15px;
   border: 1px solid var(--additional-20, rgba(2, 102, 193, 0.10));
   max-width: 285px;
+  min-height: 356px;
+  background-color: $color-default-white;
 }
 
 .instructor h4{
-  margin: 15px 0;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
 }
@@ -30,4 +25,17 @@
   right: 120px;
   gap: 4px;
   cursor: pointer;
+
+  @include vp-1199 {
+    top: 155px;
+    right: 45px;
+  }
+}
+
+.instructor__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

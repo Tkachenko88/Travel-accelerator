@@ -24,9 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
   initTourSwiper(true);
   initInstructorSwiper(true);
   initReviewSwiper(true);
-  initAdvantagesSwiper(true);
+  // initAdvantagesSwiper(true);
   initGallerySwiper(true);
-  initHeroSwiper(true);
+  initHeroSwiper();
   initVideo();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

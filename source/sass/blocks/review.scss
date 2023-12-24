@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 30px;
   padding-bottom: 10px;
+
+  @include vp-1199 {
+    padding: 37px 45px;
+  }
 }
 
 .review h2{
@@ -20,6 +24,16 @@
     left: 0;
     bottom: -3px;
     opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 
@@ -32,17 +46,26 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 40px 20px 20px;
-  border: 1px solid  red;
+  border: 1px solid  $color-default-white;
   box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.10);
-  margin-right: 120px;
+  margin-right: 116px;
   gap: 30px;
   max-width: 700px;
+
+  @include vp-1199 {
+    padding-right: 30px;
+  }
 }
 
 .review__wrapper p{
   margin: 0;
   font-size: 14px;
   line-height: 22px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .review__wrapper h4{
@@ -51,6 +74,11 @@
   line-height: 13px;
   margin-top: 12px;
   margin-bottom: 8px;
+
+  @include vp-1199 {
+    margin-top: 25px;
+    margin-bottom: 6px;
+   }
 }
 
 .review__swiper-nav{
@@ -60,4 +88,23 @@
   right: 120px;
   gap: 4px;
   cursor: pointer;
+
+  @include vp-1199 {
+    top: 30px;
+ }
+}
+
+.review img{
+  @include vp-1199 {
+   width: 186px;
+   height: 237px;
+  }
+}
+
+.review__wrapper span{
+  @include vp-1199 {
+     font-size: 12px;
+     font-weight: 300;
+    line-height: 12px
+  }
 }

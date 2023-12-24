@@ -2,6 +2,10 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 81px;
+
+  @include vp-1199 {
+    padding: 45px 0;
+ }
 }
 
 .advantages h2{
@@ -21,6 +25,10 @@
     left: 34%;
     bottom: -3px;
     opacity: 0.03;
+
+    @include vp-1199 {
+      left: 20%;
+   }
   }
 }
 
@@ -28,15 +36,27 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 30px;
   margin-bottom: 50px;
+
+  @include vp-1199 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+ }
 }
 
 .advantages li{
   width: 380px;
+  min-height: 330px;
   padding: 40px 20px;
   text-align: center;
   border: 1px solid rgba(2, 100, 192, 0.102);
+
+  @include vp-1199 {
+    width: 324px;
+ }
 }
 
 .advantages__wrapper{
@@ -67,4 +87,8 @@
   gap: 4px;
   cursor: pointer;
   justify-content: center;
+
+  @include vp-1199 {
+    display: none;
+ }
 }

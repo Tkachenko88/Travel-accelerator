@@ -2,6 +2,11 @@
   position: relative;
   padding-bottom: 54px;
   margin-bottom: 30px;
+
+  @include vp-1199 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 .about img{
@@ -9,11 +14,24 @@
   top: 0;
   left: 0;
   z-index: -1;
+
+  @include vp-1199 {
+    width: 541px;
+    position: absolute;
+    top: 60px;
+  }
 }
 
 .about__wrapper{
-  margin-left: 735px;
-  margin-right: 120px;
+  margin-left: 615px;
+  margin-right: 0;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 15px;
+    margin-left: 390px;
+  }
 }
 
 .about__wrapper h2{
@@ -32,6 +50,17 @@
     left: 0;
     bottom: -3px;
     opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+     }
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 36px;
   }
 }
 
@@ -40,6 +69,12 @@
   font-size: 21px;
   line-height: 21px;
   margin-bottom: 20px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
 }
 
 .about__wrapper p{

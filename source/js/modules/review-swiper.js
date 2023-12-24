@@ -5,7 +5,7 @@ export const initReviewSwiper = (isLoop) => {
 
   return new window.Swiper(swiperWrapper, {
     loop: isLoop,
-    slidesPerView: 1,
+    slidesPerView: 4,
     breakpoints: {
       // when window width is >= 320px
       320: {
@@ -14,8 +14,12 @@ export const initReviewSwiper = (isLoop) => {
       },
       // when window width is >= 480px
       768: {
-        slidesPerView: 1,
-        spaceBetween: 120,
+        slidesPerView: 1.2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 1.45,
+        initialSlide: 0,
       },
     },
     navigation: {

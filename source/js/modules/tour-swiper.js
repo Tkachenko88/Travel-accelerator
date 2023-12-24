@@ -14,6 +14,10 @@ export const initTourSwiper = (isLoop) => {
       },
       // when window width is >= 480px
       768: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      1200: {
         slidesPerView: 3,
         spaceBetween: 30,
       },

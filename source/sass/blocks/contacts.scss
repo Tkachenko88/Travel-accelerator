@@ -1,13 +1,26 @@
 .contacts{
   display: flex;
   justify-content: space-between;
-  padding: 65px 120px 0 120px;
-  margin-bottom: 95px;
+  padding: 65px 120px 95px 120px;
   align-items: flex-end;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0;
+    padding: 40px 0 40px;
+  }
 }
 
 .contacts__wrapper {
   margin-right: 115px;
+
+  @include vp-1199 {
+    margin: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .contacts__wrapper h2{
@@ -26,6 +39,17 @@
     left: 0;
     bottom: -3px;
     opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-1199 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 
@@ -33,20 +57,32 @@
   max-width: 500px;
   margin: 0;
   margin-bottom: 50px;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__wrapper ul{
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+
+  @include vp-1199 {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .contacts__wrapper li{
   display: flex;
   align-items: center;
-  margin-bottom: 35px;
+  gap: 30px;
 
-  &:last-child{
-    margin: 0;
+  @include vp-1199 {
+    gap: 10px;
+    align-items: start;
   }
-}
-
-.contacts__content{
-  margin-left: 30px;
 }
 
 .contacts__content h3{
@@ -55,14 +91,45 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.contacts__content span{
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .contacts__map{
   position: relative;
 }
 
+
+.contacts__map img{
+  @include vp-1199 {
+    width: 768px;
+  }
+}
+
 .contacts__map svg{
   position: absolute;
   bottom: 120px ;
   right: 32%;
+
+  @include vp-1199 {
+    bottom: 113px;
+    right: 44%;
+  }
+}
+
+.contacts__wrapper svg{
+  @include vp-1199 {
+    width: 24px;
+    height: 24px;
+  }
 }

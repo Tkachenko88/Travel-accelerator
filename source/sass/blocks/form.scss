@@ -4,6 +4,21 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  position: relative;
+  min-height: 760px;
+  width: 1440px;
+
+  @include vp-1199 {
+    min-height: 680px;
+    width: 768px;
+  }
+}
+
+.form img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .form h2{
@@ -12,21 +27,33 @@
   line-height: 35px;
   color: $color-default-white;
   margin: 0;
-  margin-bottom: 20px;
+
+  @include vp-1199 {
+    font-size: 25px;
+  }
 }
 
 .form p{
   color: $color-default-white;
   margin: 0;
-  margin-bottom: 40px;
+
+  @include vp-1199 {
+    max-width: 300px;
+  }
 }
 
-.form__input{
+.form__wrapper input{
   padding: 20px 30px;
   border-radius: 2px;
   border: 1px solid rgba(2, 102, 193, 0.10);
-  margin-right: 30px;
   width: 360px;
+
+  @include vp-1199 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 16px;
+    width: 270px;
+  }
 }
 
 .form__btn{
@@ -35,4 +62,32 @@
   width: 180px;
   color: $color-default-white;
   border: none;
+  cursor: pointer;
 }
+
+.form__wrapper{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+  }
+}
+
+.form__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+
+
+  @include vp-1199 {
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+}
+

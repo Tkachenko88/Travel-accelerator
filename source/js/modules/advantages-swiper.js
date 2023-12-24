@@ -1,22 +1,16 @@
-export const initAdvantagesSwiper = () => {
+export const initAdvantagesSwiper = (isLoop) => {
   const swiperWrapper = document.querySelector('[advantages-swiper]');
   const buttonPrev = document.querySelector('[advantages-swiper-btn-prev]');
   const buttonNext = document.querySelector('[advantages-swiper-btn-next]');
 
   return new window.Swiper(swiperWrapper, {
-    centeredSlide: true,
+    loop: isLoop,
+    centeredSlides: true,
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1240: {
-        slidesPerView: 3.6,
+      1440: {
+        slidesPerView: 3.585,
         spaceBetween: 30,
-        initialSlide: 2,
+        initialSlide: 3.5,
       },
     },
     navigation: {
@@ -25,3 +19,7 @@ export const initAdvantagesSwiper = () => {
     },
   });
 };
+
+if (window.innerWidth >= 1440) {
+  initAdvantagesSwiper();
+}

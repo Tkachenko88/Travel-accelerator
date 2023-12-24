@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-         <hero class="hero swiper" >
+       <hero class="hero swiper" data-test="hero" >
         <div class="swiper-wrapper ">
           <div class="hero__wrapper swiper-slide" style="background-image: url(/img/desktop/Hero.jpg); width: 1200; height: 800;">
             <div class="hero__description">
@@ -94,8 +94,8 @@
               </div>
             </div>
             <div class="hero__container">
-              <div class="hero__video">
-
+              <div class="hero__audio">
+                <iframe frameborder="0" style="border:none;width:100%;height:241px;" width="100%" height="241" src="https://music.yandex.ru/iframe/album/25474374">Слушайте <a href='https://music.yandex.ru/album/25474374'>Про код</a> на Яндекс Музыке</iframe>
               </div>
             </div>
           </div>
@@ -121,10 +121,11 @@
             <a class="header__contacts" href="tel:88007253232">8 800 725-32-32</a>
           </div>
         </header>
+        <div class="swiper-pagination"></div>
       </hero>
       <main>
         <h1 class="visually-hidden">Сай тур фирмы</h1>
-        <section class="tour container">
+        <section class="tour container" data-test="tours">
           <h2>Ближайшие туры</h2>
           <div >
             <div class="swiper" tour-swiper>
@@ -532,7 +533,7 @@
             alt="mountain clouds"
           />
         </section>
-        <section class="training container">
+        <section class="training container" data-test="training">
           <h2>Обучение</h2>
           <p>
             Обучение проводится квалифицированными специалистами, за плечами
@@ -549,10 +550,15 @@
                   width="255"
                   height="200"
                 />
-                <h4>
-                  Александр<br />
-                  Прокофьев
-                </h4>
+                <div class="instructor__container">
+                  <h4>
+                    Александр<br />
+                    Прокофьев
+                  </h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
                 <p>
                   Строгий и внимательный инструктор, весёлый и общительный
                   человек. Любит природу.
@@ -565,10 +571,15 @@
                   width="255"
                   height="200"
                 />
-                <h4>
-                  Светлана<br />
-                  Афиногенова
-                </h4>
+                <div class="instructor__container">
+                  <h4>
+                    Светлана<br />
+                    Афиногенова
+                  </h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
                 <p>
                   Видеть мир вокруг, познавать его опасности, находить друг
                   друга, становиться ближе, чувствовать — в этом назначение
@@ -582,10 +593,15 @@
                   width="255"
                   height="200"
                 />
-                <h4>
-                  Надежда<br />
-                  Колесниченко
-                </h4>
+                <div class="instructor__container">
+                  <h4>
+                    Надежда<br />
+                    Колесниченко
+                  </h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
                 <p>
                   Участники говорят, что Надежда ответственная, приятная
                   в общении, и в поездках с ней чувствуешь себя спокойно
@@ -599,10 +615,15 @@
                   width="255"
                   height="200"
                 />
-                <h4>
-                  Федор<br />
-                  Кайгородов
-                </h4>
+                <div class="instructor__container">
+                  <h4>
+                    Федор<br />
+                    Кайгородов
+                  </h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
                 <p>
                   Опыт походов: Ходит в походы с 2001 года. В России побывал
                   в горных районах Хибины, Архыз, много путешествует по Европе.
@@ -615,10 +636,15 @@
                   width="255"
                   height="200"
                 />
-                <h4>
-                  Федор<br />
-                  Кайгородов
-                </h4>
+                <div class="instructor__container">
+                  <h4>
+                    Федор<br />
+                    Кайгородов
+                  </h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
                 <p>
                   Опыт походов: Ходит в походы с 2001 года. В России побывал
                   в горных районах Хибины, Архыз, много путешествует по Европе.
@@ -631,10 +657,15 @@
                   width="255"
                   height="200"
                 />
-                <h4>
-                  Федор<br />
-                  Кайгородов
-                </h4>
+                <div class="instructor__container">
+                  <h4>
+                    Федор<br />
+                    Кайгородов
+                  </h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
                 <p>
                   Опыт походов: Ходит в походы с 2001 года. В России побывал
                   в горных районах Хибины, Архыз, много путешествует по Европе.
@@ -683,58 +714,62 @@
         </section>
         <section class="learning container">
           <h3>Процесс обучения</h3>
-          <ul>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="none"
-                viewBox="0 0 25 25"
-              >
-              <use xlink:href="img/sprite.svg#map"></use>
-              </svg>
-              <p>Изучение спортивного туристского движения</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="25"
-                fill="none"
-                viewBox="0 0 26 25"
-              >
-              <use xlink:href="img/sprite.svg#boots"></use>
-              </svg>
-              <p>Подготовка и техническое снаряжение в походах</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="25"
-                fill="none"
-                viewBox="0 0 26 25"
-              >
-              <use xlink:href="img/sprite.svg#forest"></use>
-              </svg>
-              <p>Лекции по окружающей среде, экологии и гигиене</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="none"
-                viewBox="0 0 25 25"
-              >
-              <use xlink:href="img/sprite.svg#mountain"></use>
-              </svg>
-              <p>Разъяснение сложности горных препятствий</p>
-            </li>
-          </ul>
+          <div class="learning__wrapper">
+            <ul class="learning__first">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="none"
+                  viewBox="0 0 25 25"
+                >
+                <use xlink:href="img/sprite.svg#map"></use>
+                </svg>
+                <p>Изучение спортивного туристского движения</p>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="25"
+                  fill="none"
+                  viewBox="0 0 26 25"
+                >
+                <use xlink:href="img/sprite.svg#boots"></use>
+                </svg>
+                <p>Подготовка и техническое снаряжение в походах</p>
+              </li>
+            </ul>
+            <ul class="learning__last">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="25"
+                  fill="none"
+                  viewBox="0 0 26 25"
+                >
+                <use xlink:href="img/sprite.svg#forest"></use>
+                </svg>
+                <p>Лекции по окружающей среде, экологии и гигиене</p>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="none"
+                  viewBox="0 0 25 25"
+                >
+                <use xlink:href="img/sprite.svg#mountain"></use>
+                </svg>
+                <p>Разъяснение сложности горных препятствий</p>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="about container">
+        <section class="about container" data-test="about">
           <img src="/img/desktop/lake.jpg" width="808" height="474" />
           <div class="about__wrapper">
             <h2>О нас</h2>
@@ -754,12 +789,12 @@
             </p>
           </div>
         </section>
-        <section class="review container">
+        <section class="review container" data-test="reviews">
           <h2>Отзывы</h2>
           <div class="swiper" review-swiper>
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <img
+                  <img
                   src="/img/desktop/review1.jpg"
                   width="258"
                   height="253"
@@ -767,12 +802,8 @@
                 />
                 <div class="review__wrapper">
                   <p>
-                    Хороший полноценный поход с разнообразными локациями. В
-                    начале дорога идет по лыжне, далее прошли мимо полигона, по
-                    болотам, у озер и лесных ручьев, остатков дач конца 19 века.
-                    Было очень интересно! Инструктор Федор дружелюбный,
-                    внимательный к технике безопасности и своим туристам. Всем
-                    советую этот тур.
+                    Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места.
+                    С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!
                   </p>
                   <h4>Фролов Александр</h4>
                   <span>38 лет, Москва</span>
@@ -879,20 +910,33 @@
             </div>
           </div>
         </section>
-        <section class="advantages container">
+        <section class="advantages container" data-test="adv">
           <h2>Преимущества</h2>
           <div class="swiper" advantages-swiper>
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
                 <div class="advantages__wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="#0266C1" d="M19.3 21.82H4.7M22.9 7.76l-3.18 10.57H4.28L1.1 7.76l6.3 3.82 4.6-9.4 4.61 9.4 6.3-3.82Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#safety"></use>
+                  </svg>
+                </div>
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+              </li>
+              <li class="swiper-slide">
+                <div class="advantages__wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#crown"></use>
+                  </svg>
                 </div>
                 <h3>Экспертиза и знания</h3>
                 <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надежных руках и могут в полной мере насладиться опытом без опасений.</p>
               </li>
               <li class="swiper-slide">
                 <div class="advantages__wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#0266C1" d="M22.6 15.54c.68-2.29.12-4.88-.47-6.68a16.28 16.28 0 0 0-.6-1.6.85.85 0 0 0 .48-.77V3.02c0-.46-.35-.84-.78-.84h-9.51c-.22 0-.4.19-.4.42l.01.02c.13 2.5-.04 4.2-.53 5.4a.37.37 0 0 0-.03.04v.06c-.19.44-.44.83-.75 1.18l-.03.02v.03c-.46.47-.98.85-1.55 1.13-1 .48-2.02.88-3.06 1.23l-.2.07c-3.62 1.29-4.1 3.63-4.09 4.8v3.04c0 .14.07.28.19.35.89.58 1.84 1.03 2.84 1.33.21.06.42-.07.48-.3a.45.45 0 0 0 .02-.12v-.1h.57v.42c0 .2.13.38.32.42.34.06.68.1 1 .13a.4.4 0 0 0 .3-.1c.08-.09.12-.2.12-.32v-.52h.57v.6c0 .22.18.4.39.4.33 0 .65 0 1-.04.2-.02.36-.2.36-.42v-.54h.57v.37c0 .23.16.42.38.42h.06c.72-.12 1.42-.3 2.1-.55l.06-.02c2.71-1.67 4.43-.3 4.5-.24.07.05.15.09.24.09h.48c.21 0 .39-.2.39-.42v-.7h.55v.69c0 .23.17.42.39.42h1.25c.21 0 .38-.19.38-.42v-.7h.58v.7c0 .23.17.42.38.42h.96c.21 0 .39-.19.39-.42v-4.5c0-.2-.13-.37-.31-.41ZM13.4 3.02h7.82v3.46H13.4V3.02Zm-4.86 8.32v.02c.32.28.61.59.88.93a.83.83 0 0 0-.1.41c-.01.44.32.8.73.8.4 0 .74-.35.74-.79 0-.41-.29-.76-.67-.8a6.11 6.11 0 0 0-.84-.98c.35-.22.68-.46.98-.75.37.38.72.8 1.04 1.23-.13.41.07.87.46 1.01.38.15.8-.07.94-.49.13-.41-.07-.87-.45-1.01a.7.7 0 0 0-.25-.05h-.1c-.34-.46-.7-.9-1.1-1.3.18-.24.34-.5.48-.78.6.34 1.18.71 1.74 1.13 0 .44.33.8.74.8.41.01.75-.34.75-.79 0-.44-.32-.8-.74-.81a.7.7 0 0 0-.34.08 16.9 16.9 0 0 0-1.82-1.16c.42-1.2.6-2.81.52-5h.5V6.5c0 .46.35.84.78.84h7.26c.1.22.27.6.46 1.1h-.16c-2.36.02-4.25 2.09-4.23 4.62a4.7 4.7 0 0 0 1.72 3.65c-3.14.89-7.85 1.94-11.82 1.67.73-3.15-.14-5.09-.71-5.94a24.7 24.7 0 0 0 2.6-1.1Zm-3.39 1.33c.42.53 1.51 2.3.71 5.58a9.23 9.23 0 0 1-3.97-1.29l-.03-.29v-.03c-.03-.89.28-2.8 3.3-3.97Zm16.8 7.36v-.7c0-.22-.17-.41-.39-.41h-1.34c-.21 0-.39.19-.39.42v.7h-.47v-.7a.41.41 0 0 0-.4-.42h-1.33c-.21 0-.39.19-.39.42v.68c-.52-.36-2.45-1.39-5.18.26-.48.17-.98.3-1.48.41v-.29a.4.4 0 0 0-.39-.41H8.85c-.2 0-.38.18-.38.41v.58h-.2v-.59c0-.23-.17-.42-.39-.42H6.54c-.22 0-.39.2-.39.42v.5l-.2-.03v-.47c0-.23-.17-.42-.38-.42H4.22a.4.4 0 0 0-.39.37 9.92 9.92 0 0 1-1.97-.95v-1.5c1.69.97 3.87 1.33 6.2 1.33 6.17 0 13.24-2.54 14.07-2.85v3.66h-.18Zm-.19-4.4c-.33.12-1.14.42-2.26.74a3.89 3.89 0 0 1-1.62-5.01 3.48 3.48 0 0 1 3.54-2.1v.02c.58 1.77 1.09 4.29.34 6.35Z"/><path fill="#0266C1" d="M14.9 3.53c-.62 0-1.13.54-1.13 1.21 0 .67.5 1.21 1.13 1.22.62 0 1.12-.55 1.12-1.22 0-.67-.5-1.21-1.12-1.21Zm0 1.6c-.2 0-.35-.18-.35-.39 0-.2.15-.38.35-.38.2 0 .35.17.35.38s-.16.38-.35.38Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0266C1" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#boots"></use>
+                  </svg>
                 </div>
                 <h3>Оборудование и снаряжение</h3>
                 <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
@@ -953,11 +997,13 @@
               </svg>
             </div>
         </section>
-        <section class="gallery container">
-          <h2>Фотогалерея</h2>
-          <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото.
-            Лучшие фотографии украсят этот раздел нашего сайта.
-          </p>
+        <section class="gallery" data-test="gallery">
+          <div class="gallery__container container">
+            <h2>Фотогалерея</h2>
+            <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото.
+              Лучшие фотографии украсят этот раздел нашего сайта.
+            </p>
+        </div>
           <div class="swiper" gallery-swiper>
             <div class="gallery__wrapper swiper-wrapper">
               <div class="gallery__card swiper-slide">
@@ -1021,36 +1067,36 @@
               </svg>
             </div>
         </section>
-        <section class="form" style="
-          background-image: url(/img/desktop/form.jpg);
-          width: 1440px;
-          height: 760px;
-            ">
-            <div>
+        <section class="form" data-test="form">
+          <picture>
+            <source media="(max-width: 1439px)" srcset="/img/tablet/form.jpg" type="image/jpg">
+            <img src="/img/desktop/form.jpg" width="1440" height="760">
+          </picture>
+            <div class="form__container">
               <h2>Остались вопросы?</h2>
               <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
             </div>
-          <div class="form__wrapper">
-            <label class="form__label" for="userphone">
-              <input class="form__input" type="tel" id="userphone" name="userphone" placeholder="Телефон">
-            </label>
-            <label class="form__label" for="useremail">
-              <input class="form__input" type="email" id="useremail" name="useremail" placeholder="Email">
-            </label>
-            <button class="form__btn" type="submit">
-              Отправить
-            </button>
-          </div>
+            <div class="form__wrapper">
+              <label for="userphone">
+                <input type="tel" id="userphone" name="userphone" placeholder="Телефон">
+              </label>
+              <label for="useremail">
+                <input type="email" id="useremail" name="useremail" placeholder="Email">
+              </label>
+              <button class="form__btn" type="submit">
+                Отправить
+              </button>
+            </div>
         </section>
       </main>
-      <footer class="footer__wrapper">
+      <footer class="footer__wrapper" data-test="footer">
         <section class="contacts">
           <div class="contacts__wrapper">
             <h2>Контакты</h2>
             <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
             <ul>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" >
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
                 <div class="contacts__content">
@@ -1059,7 +1105,7 @@
                 </div>
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" >
                   <use xlink:href="img/sprite.svg#email"></use>
                 </svg>
                 <div class="contacts__content">
@@ -1068,7 +1114,7 @@
                 </div>
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" >
                   <use xlink:href="img/sprite.svg#map-pin"></use>
                 </svg>
                 <div class="contacts__content">
@@ -1079,8 +1125,15 @@
             </ul>
           </div>
           <div class="contacts__map">
-            <img src="/img/desktop/map.png" alt="Карта" width="585" height="324">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#0266C1" fill-rule="evenodd" d="M24 2.18c9.04 0 16.36 6.98 16.36 15.6v.94a16 16 0 0 1-3.23 9.6L24.03 45.8a.04.04 0 0 1-.06 0l-13.1-17.47a16.01 16.01 0 0 1-3.23-9.61v-.94c0-8.62 7.32-15.6 16.36-15.6Zm-2.9 10.4a6.42 6.42 0 0 0-3.63 4.3 6.08 6.08 0 0 0 1.3 5.36 6.85 6.85 0 0 0 5.23 2.4c2.04 0 3.97-.89 5.24-2.4a6.08 6.08 0 0 0 1.3-5.36 6.42 6.42 0 0 0-3.63-4.3 7.05 7.05 0 0 0-5.82 0Z" clip-rule="evenodd"/></svg>
+            <picture>
+              <!-- <source media="(max-width: 767px)" srcset="./img/mobile/map.webp 1x, ./img/mobile/map@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1200px)" srcset="./img/tablet/map.webp 1x, ./img/tablet/map@2x.webp 2x" type="image/webp">
+              <source srcset="./img/desktop/map.webp 1x, ./img/desktop/map@2x.webp 2x" type="image/webp"> -->
+              <source media="(max-width: 767px)" srcset="./img/mobile/map.png 1x, ./img/mobile/map@2x.png 2x" type="image/jpg">
+              <source media="(max-width: 1200px)" srcset="./img/tablet/map.png 1x, ./img/tablet/map@2x.png 2x" type="image/jpg">
+              <img src="/img/desktop/map.png" alt="Карта" width="585" height="324">
+            </picture>
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#0266C1" fill-rule="evenodd" d="M24 2.18c9.04 0 16.36 6.98 16.36 15.6v.94a16 16 0 0 1-3.23 9.6L24.03 45.8a.04.04 0 0 1-.06 0l-13.1-17.47a16.01 16.01 0 0 1-3.23-9.61v-.94c0-8.62 7.32-15.6 16.36-15.6Zm-2.9 10.4a6.42 6.42 0 0 0-3.63 4.3 6.08 6.08 0 0 0 1.3 5.36 6.85 6.85 0 0 0 5.23 2.4c2.04 0 3.97-.89 5.24-2.4a6.08 6.08 0 0 0 1.3-5.36 6.42 6.42 0 0 0-3.63-4.3 7.05 7.05 0 0 0-5.82 0Z" clip-rule="evenodd"/></svg>
            </div>
         </section>
         <section class="footer">
