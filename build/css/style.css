@@ -1558,6 +1558,18 @@ button,
   top: 0;
   width: calc(100% - 240px);
 }
+@media (max-width: 1199px) {
+  .header {
+    left: 0;
+    width: 100%;
+    padding: 20px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 15px;
+  }
+}
 
 .header__wrapper {
   display: -webkit-box;
@@ -1575,6 +1587,42 @@ button,
   line-height: 18px;
   color: #ffffff;
 }
+@media (max-width: 1199px) {
+  .header__contacts {
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .header__contacts {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.header__button {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header__button {
+    display: block;
+    border: none;
+    background-color: #0266C1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header__logo img {
+    width: 142px;
+    height: 42px;
+  }
+}
+
+.header__pagination {
+  position: absolute;
+  bottom: 0;
+}
 
 .header-nav {
   display: -webkit-box;
@@ -1587,6 +1635,11 @@ button,
   margin: auto;
   line-height: 16px;
   color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .header-nav {
+    display: none;
+  }
 }
 
 .header-nav__item {
@@ -1610,7 +1663,22 @@ button,
   max-width: 780px;
   margin: 0;
   margin-bottom: 25px;
-  min-width: 906px;
+  width: 906px;
+}
+@media (max-width: 1199px) {
+  .hero__wrapper h2 {
+    font-size: 56px;
+    line-height: 56px;
+    max-width: 678px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__wrapper h2 {
+    font-size: 26px;
+    line-height: 26px;
+    max-width: 290px;
+    margin-bottom: 15px;
+  }
 }
 
 .hero__wrapper p {
@@ -1620,6 +1688,13 @@ button,
   margin-bottom: 35px;
   color: #ffffff;
   max-width: 420px;
+}
+@media (max-width: 767px) {
+  .hero__wrapper p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 .hero__wrapper a {
@@ -1647,6 +1722,23 @@ button,
   -ms-flex-direction: row;
       flex-direction: row;
 }
+@media (max-width: 1199px) {
+  .hero__wrapper {
+    padding: 212px 45px 180px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .hero__wrapper {
+    padding: 140px 15px 40px 15px;
+  }
+}
 
 .hero__content {
   display: -webkit-box;
@@ -1654,6 +1746,11 @@ button,
   display: flex;
   gap: 10px;
   margin-top: 134px;
+}
+@media (max-width: 1199px) {
+  .hero__content {
+    display: none;
+  }
 }
 
 .hero__content svg {
@@ -1692,6 +1789,12 @@ button,
 }
 .hero__container:last-child {
   top: 440px;
+  position: static;
+}
+@media (max-width: 767px) {
+  .hero__container {
+    display: none;
+  }
 }
 
 .hero__video {
@@ -1727,6 +1830,23 @@ button,
   cursor: pointer;
 }
 
+@media (max-width: 1199px) {
+  .hero__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+
 .tour {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1736,6 +1856,11 @@ button,
   .tour {
     padding-top: 45px;
     padding-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tour {
+    padding-top: 20px;
   }
 }
 
@@ -1755,6 +1880,13 @@ button,
   left: 0;
   bottom: -3px;
   opacity: 0.03;
+}
+@media (max-width: 767px) {
+  .tour h2 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
 }
 
 .tour ul {
@@ -1880,6 +2012,12 @@ button,
   .tour__swiper-nav {
     top: 50px;
     right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tour__swiper-nav {
+    top: 5px;
+    right: 15px;
   }
 }
 
@@ -2928,6 +3066,10 @@ button,
     font-size: 14px;
     line-height: 14px;
   }
+}
+
+.intro a {
+  color: #2D383F;
 }
 
 /* @mixin hover-focus {

@@ -8,7 +8,9 @@
     padding-bottom: 45px;
   }
 
-
+  @include vp-767 {
+    padding-top: 20px;
+  }
 }
 
 .tour h2{
@@ -27,6 +29,12 @@
     left: 0;
     bottom: -3px;
     opacity: 0.03;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
   }
 }
 
@@ -126,6 +134,11 @@
   @include vp-1199 {
     top: 50px;
     right: 45px;
+  }
+
+  @include vp-767 {
+    top: 5px;
+    right: 15px;
   }
 }
 

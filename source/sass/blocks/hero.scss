@@ -13,7 +13,20 @@
   max-width: 780px;
   margin: 0;
   margin-bottom: 25px;
-  min-width: 906px;
+  width: 906px;
+
+  @include vp-1199 {
+    font-size: 56px;
+    line-height: 56px;
+    max-width: 678px;
+   }
+
+   @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    max-width: 290px;
+    margin-bottom: 15px;
+  }
 }
 
 .hero__wrapper p{
@@ -23,6 +36,12 @@
   margin-bottom: 35px;
   color: $color-default-white;
   max-width: 420px;
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 .hero__wrapper a{
@@ -41,12 +60,26 @@
   background-size: cover;
   padding: 200px 120px 80px;
   flex-direction: row;
+
+  @include vp-1199 {
+    padding: 212px 45px 180px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    padding: 140px 15px 40px 15px;
+  }
 }
 
 .hero__content{
   display: flex;
   gap: 10px;
   margin-top: 134px;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .hero__content svg{
@@ -84,6 +117,11 @@
 
   &:last-child{
     top: 440px;
+    position: static;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -106,7 +144,7 @@
 }
 
 .hero__pagination{
-  position: absolute;
+    position: absolute;
     right: 0px;
     bottom: 120px;
     width: 200px;
@@ -114,4 +152,14 @@
     display: flex;
     gap: 20px;
     cursor: pointer;
+}
+
+.hero__description{
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 45px;
+  }
 }
