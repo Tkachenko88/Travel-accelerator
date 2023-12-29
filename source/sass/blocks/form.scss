@@ -63,6 +63,10 @@
   color: $color-default-white;
   border: none;
   cursor: pointer;
+
+  @include vp-1199 {
+    width: 270px;
+  }
 }
 
 .form__wrapper{

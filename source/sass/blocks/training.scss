@@ -1,6 +1,10 @@
 .training {
  position: relative;
  margin-bottom: 56px;
+
+ @include vp-1199 {
+  padding-top: 70px;
+}
 }
 
 .training h3{
@@ -9,6 +13,10 @@
   line-height: 21px;
   margin: 0;
   margin-bottom: 54px;
+
+  @include vp-1199 {
+    margin-bottom: 67px;
+  }
 }
 
 .training h2{
@@ -36,6 +44,7 @@
 
   @include vp-1199 {
     font-size: 25px;
+    margin-bottom: 25px;
   }
 }
 

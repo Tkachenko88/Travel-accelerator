@@ -61,5 +61,26 @@
 
 .header__pagination{
   position: absolute;
-  bottom: 0;
+  bottom: 90px;
+  right: 120px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include vp-1199 {
+    right: calc(50% - 35px);
+    bottom: 34px;
+  }
+}
+
+.header__pagination span{
+  width: 10px;
+  height: 10px;
+  border: 1px solid $color-default-white;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: $color-default-white;
 }

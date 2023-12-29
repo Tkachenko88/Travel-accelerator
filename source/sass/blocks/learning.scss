@@ -1,6 +1,10 @@
 .learning{
   position: relative;
   margin-bottom: 56px;
+
+  @include vp-1199 {
+    margin-bottom: 48px;
+  }
 }
 
 .learning__wrapper{

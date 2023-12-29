@@ -4,7 +4,7 @@ export const initHeroSwiper = () => {
   return new window.Swiper(swiperWrapper, {
     slidesPerView: 1,
     pagination: {
-      el: '.swiper-pagination',
+      el: '[hero-pagination]',
       clickable: true,
     },
   });

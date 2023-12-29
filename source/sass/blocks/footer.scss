@@ -11,6 +11,12 @@
   }
 }
 
+.footer__wrapper{
+  @include vp-1199 {
+    min-width: 768px;
+   }
+}
+
 .footer__nav{
   display: flex;
   justify-content: space-between;

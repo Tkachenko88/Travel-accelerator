@@ -9,6 +9,8 @@ const createVideo = () => {
   iframeElement.setAttribute('frameborder', '0');
   iframeElement.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
   iframeElement.setAttribute('allowfullscreen', '');
+  iframeElement.setAttribute('width', '482');
+  iframeElement.setAttribute('height', '317');
   container.append(iframeElement);
   return iframeElement;
 };

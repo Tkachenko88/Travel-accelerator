@@ -17,8 +17,10 @@
 
   @include vp-1199 {
     width: 541px;
+    height: 350px;
     position: absolute;
-    top: 60px;
+    top: 65px;
+    left: -14px;
   }
 }
 
@@ -29,8 +31,7 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 18px;
-    padding-top: 15px;
-    margin-left: 390px;
+    margin-left: 409px;
   }
 }
 
@@ -73,7 +74,7 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 

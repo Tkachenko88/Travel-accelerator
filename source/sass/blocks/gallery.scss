@@ -1,6 +1,10 @@
 .gallery{
   position: relative;
   padding: 0;
+
+  @include vp-1199 {
+    min-width: 768px;
+  }
 }
 
 .gallery__container{
@@ -38,7 +42,7 @@
     font-size: 25px;
     line-height: 25px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 
@@ -80,5 +84,6 @@
 
   @include vp-1199 {
     right: 45px;
+    top: 72px;
   }
 }
